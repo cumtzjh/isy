@@ -45,7 +45,7 @@ public class BaseDao {
 	 */
 	public void closeAll() {
 		try {
-			if (rs != null && !rs.isClosed()) {
+			if (rs != null){// && !rs.isClosed()) {
 				rs.close();
 			}
 			if (pstmt != null) { //&& !pstmt.isClosed()) {
